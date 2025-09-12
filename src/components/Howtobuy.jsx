@@ -8,7 +8,7 @@ import swapmobile from '../assets/swapmobile.png'
 
 function Howtobuy() {
   return (
-    <div className='flex justify-center items-center flex-col w-full lg:gap-10 gap-3'>
+    <div id='howtobuy' className='flex justify-center items-center flex-col w-full lg:gap-10 gap-3'>
         <div className="side flex justify-around items-center flex-col lg:flex-row w-full lg:gap-10 gap-3">
         <img src={howtobuy} alt="" className='w-[90vw] lg:w-[45vw] ' />
         <img src={getsol} alt="" className='w-[90vw] lg:w-[45vw] ' />

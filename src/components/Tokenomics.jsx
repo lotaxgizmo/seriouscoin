@@ -8,7 +8,7 @@ import taxes from '../assets/taxes.png'
 
 function Tokenomics() {
   return (
-    <div className='flex flex-col justify-center items-center w-full mb-10 lg:mb-30 lg:mt-20 mt-5'>
+    <div id='tokenomics' className='flex flex-col justify-center items-center w-full mb-10 lg:mb-30 lg:mt-20 mt-5'>
           
         <img src={tokenomics} alt="" className='lg:w-[75vw] w-[90vw]' />
         <img src={tokedeets} alt="" className='w-[80vw] mt-5 hidden lg:flex' />

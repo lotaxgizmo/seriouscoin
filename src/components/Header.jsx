@@ -4,7 +4,13 @@ import header from '../assets/header.png'
 function Header() {
 
 
-    const links = ['HOME', 'ABOUT', 'TOKENOMICS', 'TELEGRAM', 'TWITTER']
+    const links = [
+        { name: 'HOME', url: '#' },
+        { name: 'ABOUT', url: '#about' },
+        { name: 'TOKENOMICS', url: '#tokenomics' },
+        { name: 'TELEGRAM', url: 'https://t.me/seriouscoinn' },
+        { name: 'TWITTER', url: 'https://x.com/seriouscoin_sol' }
+    ]
 
   return (
     <div className="flex flex-col justify-center items-center">
@@ -15,7 +21,7 @@ function Header() {
 
     {links.map((link, index) => (
         <div key={index} className="part bg-[#FCCD37] hover:bg-black  duration-300 transition-all lg:border-[0.3vw] border-[0.5vw] rounded-full px-[1.3vw] flex flex-col justify-center items-center hovery group">
-            <a href="#" className='lg:-mb-[0.1vw] lg:mt-[0.3vw] mb-[0.5vw] mt-[1.2vw] group-hover:text-[#FCCD37] transition-all duration-300'>{link}</a>
+            <a href={link.url} className='lg:-mb-[0.1vw] lg:mt-[0.3vw] mb-[0.5vw] mt-[1.2vw] group-hover:text-[#FCCD37] transition-all duration-300'>{link.name}</a>
         </div>
     ))}
 </div>
