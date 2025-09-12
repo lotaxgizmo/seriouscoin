@@ -21,7 +21,14 @@ function Header() {
 
     {links.map((link, index) => (
         <div key={index} className="part bg-[#FCCD37] hover:bg-black  duration-300 transition-all lg:border-[0.3vw] border-[0.5vw] rounded-full px-[1.3vw] flex flex-col justify-center items-center hovery group">
-            <a href={link.url} className='lg:-mb-[0.1vw] lg:mt-[0.3vw] mb-[0.5vw] mt-[1.2vw] group-hover:text-[#FCCD37] transition-all duration-300'>{link.name}</a>
+            <a 
+                href={link.url} 
+                className='lg:-mb-[0.1vw] lg:mt-[0.3vw] mb-[0.5vw] mt-[1.2vw] group-hover:text-[#FCCD37] transition-all duration-300'
+                target={link.url.startsWith('http') ? '_blank' : '_self'}
+                rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+            >
+                {link.name}
+            </a>
         </div>
     ))}
 </div>

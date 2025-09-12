@@ -44,16 +44,19 @@ function Hero() {
   };
 
   return (
-    <div id='home' className='flex flex-col justify-center items-center relative mt-2'>
+    <div id='home' className='flex flex-col justify-center items-center relative lg:mt-2 mt-5  '>
     
 <img src={herobg} alt="" className='w-[90vw] lg:w-[93vw] hidden lg:flex' />
 <div className="lg:absolute top-5 z-10 flex flex-col justify-center items-center">
     
+    <div className="serdiv relative">
+    <img src={meanit} alt="" className='w-[15vw] lg:w-[12vw] levitate absolute z-10' />
 <img src={serious} alt="" className='w-[90vw] lg:w-[75vw] levitate' />
+    </div>
 
 <Header />
 
-<img src={coin} alt="" className='w-[90vw] lg:w-[55vw] levitate2' />
+<img src={coin} alt="" className='w-[90vw] lg:w-[55vw] levitate2 mt-2 lg:mt-0' />
 
 <div className="btns flex  justify-center items-center  flex-row lg:gap-20 gap-5 mt-3 lg:mt-0">
     <a href="https://raydium.io/swap/?inputMint=55E5Bn6n3L44tjfUBc18turPsdSBvs8MVb22oeM9robo&outputMint=sol" target="_blank" rel="noopener noreferrer">
