@@ -1,0 +1,73 @@
+When I say prepare gizmo environment, you do this
+
+A. Go to the src/assets folder and remove react.svg
+B. Go to the src folder and delete App.css and Index.css, then recreate a new index.css file. make sure there is nothing in index.css
+C. Go to the src folder and make App.jsx blank with just boilerplate code with no imports, app.jsx must be blank with no imports and give it a class of "flexy overflow-x-hidden".
+D. Go to the src folder and clear out the index.css file, this it to confirm that you did the earlier command.
+E. Go to the public folder and remove vite.svg
+F. Make index.html and change the title from "Vite + React" to "mistyonsui", change /vite.svg to /favicon.png
+G. Go to the src folder and create a "components" folder
+H. In the components folder, create these .jsx files [Header, Hero, About, Tokenomics, Footer], and import them to App.jsx.
+
+The files in components will have the boiler plate like this
+
+```jsx
+ 
+function Placeholder() {
+  return (
+    <div>Placeholder</div>
+  )
+}
+
+export default Placeholder
+```
+I. Install tailwind with npm install tailwindcss @tailwindcss/vite
+
+J. After tailwind is installed, go to vite.config.js and replace the entire content with
+
+```js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+})
+```
+K. Go to index.css and add "@import "tailwindcss;" to the very top.
+L. Still in index.css, addthis 
+```css
+.flexy{
+    @apply flex flex-col justify-center items-center
+}
+``` 
+
+M. In css, make sure you dont put this weird thing below, it causes errors
+```css
+:;
+  }
+}
+```
+
+That's all for initialization, here are some other rules.
+
+- When I say Prepare half in half, you do this
+
+```jsx
+<div className="two flex flex-col lg:flex-row">
+
+<div className="left lg:w-[50%] w-full flex justify-center items-center">
+
+</div>
+
+<div className="right lg:w-[50%] w-full flex justify-center items-center">
+
+</div>
+
+</div>
+```
+
+Now once in a while, I will paste an image to be imported by the root like this "C:\Users\HP\Documents\Web Projects\donutx\src\assets\placeholder.png" or "src\assets\placeholder.png" or "c:\Users\HP\Documents\Figma Exports\placeholder.png", this just means you will convert it to come out like this "import placeholder from "../assets/placeholder.png" .  You make it come from src\assets\
+
+
