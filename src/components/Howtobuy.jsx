@@ -8,12 +8,12 @@ import swapmobile from '../assets/swapmobile.png'
 
 function Howtobuy() {
   return (
-    <div className='flex justify-center items-center flex-col w-full gap-10'>
-        <div className="side flex justify-around items-center flex-col lg:flex-row w-full gap-10">
+    <div className='flex justify-center items-center flex-col w-full lg:gap-10 gap-3'>
+        <div className="side flex justify-around items-center flex-col lg:flex-row w-full lg:gap-10 gap-3">
         <img src={howtobuy} alt="" className='w-[90vw] lg:w-[45vw] ' />
         <img src={getsol} alt="" className='w-[90vw] lg:w-[45vw] ' />
         </div>
-        <div className="side flex justify-around items-center flex-col lg:flex-row w-full gap-10">
+        <div className="side flex justify-around items-center flex-col lg:flex-row w-full lg:gap-10 gap-3">
         <img src={setup} alt="" className='w-[90vw] lg:w-[45vw] ' />
         <img src={send} alt="" className='w-[90vw] lg:w-[45vw] ' />
         </div>

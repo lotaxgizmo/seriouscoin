@@ -8,7 +8,7 @@ import taxes from '../assets/taxes.png'
 
 function Tokenomics() {
   return (
-    <div className='flex flex-col justify-center items-center w-full mb-10 lg:mb-30'>
+    <div className='flex flex-col justify-center items-center w-full mb-10 lg:mb-30 lg:mt-20 mt-5'>
           
         <img src={tokenomics} alt="" className='lg:w-[75vw] w-[90vw]' />
         <img src={tokedeets} alt="" className='w-[80vw] mt-5 hidden lg:flex' />
@@ -17,7 +17,7 @@ function Tokenomics() {
 
 
 
-        <div className="three flex flex-col lg:flex-row justify-around items-center lg:gap-10 gap-5 lg:mt-20 mt-5 w-full ">
+        <div className="three flex flex-col lg:flex-row justify-around items-center lg:gap-10 gap-3 lg:mt-20 mt-5 w-full ">
             <img src={totalsupply} alt="" className='w-[90vw] lg:w-[26vw]  lg:rotate-20' />
             <img src={liquidity} alt="" className='w-[90vw] lg:w-[26vw] ' />
             <img src={taxes} alt="" className='w-[90vw] lg:w-[26vw]  lg:-rotate-20' />

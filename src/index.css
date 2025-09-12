@@ -1,9 +1,38 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Moresa';
+  src: url('./assets/moresa.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body{
+  font-family: 'Moresa', sans-serif;
   background-color: #E9AB34;
 }
 
 .flexy {
   @apply flex flex-col justify-center items-center;
+}
+
+.hovery {
+  @apply hover:scale-110 active:scale-90 transition-all duration-300;
+}
+
+.levitate{
+  animation: levitate 3s ease-in-out infinite;
+}
+.levitate2{
+  animation: levitate 5s ease-in-out infinite;
+}
+
+@keyframes levitate {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
